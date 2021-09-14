@@ -6,7 +6,7 @@ const input_args = [];
 
 process.argv.forEach((args, index) => {
     // node index.jsがここの配列に含まれるので無視
-    if (index<2) return
+    if (index<2) return;
     // コマンドライン引数はString型なのでNumberに変更
     input_args.push(Number(args));
 });
